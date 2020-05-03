@@ -1,0 +1,31 @@
+# (GUIDE) (TUTORIAL) wish list and review microservice API 
+This is very basic and detailed guide for person who is not good at in technology like me.
+
+## Overview
+* Referrence **[Here](https://github.com/FFEVER/sos-products)** 
+
+## Github Guide (Intallation)
+1. create new repository in here 
+2. create vs code workspace (folder) and git on your local machine 
+ - vs code installation [coming soon]
+ - git installation [coming soon]
+### on vs code
+3. click source control then click initial repository, select your workspace.
+4. try first commit.
+5. To add remote
+- click view -> command palette
+- type add remote
+- type repo name, git repo link.git
+- click cloud on bottom to push commit
+### on your git
+6. check change on git repo
+
+## Tool and develop
+ - Git
+ - VS code
+
+## Methodology
+[coming soon]
+
+## Implementation
+[coming soon]
