@@ -34,4 +34,11 @@ This is very basic and detailed guide for person who is not good at in technolog
 [coming soon]
 
 ## Implementation
-[coming soon]
+### Flask library for API
+
+update pip
+python -m pip install --upgrade pip
+
+install flask
+pip install Flask
+* Guide: **[Here](https://www.youtube.com/watch?v=s_ht4AKnWZg)**
