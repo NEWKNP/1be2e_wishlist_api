@@ -12,8 +12,8 @@ wishList = pd.read_csv("wish_list.csv") #example data
 wishList['product_id'] = wishList['product_id'].astype(str)
 #wishList = wishList.set_index(['product_id'])
 review_column = ['user_id','product_id', 'comment', 'vote']
-review = pd.DataFrame(columns=review_column)
-#review = pd.read_csv("reviews.csv") #last my reviews
+#review = pd.DataFrame(columns=review_column)
+review = pd.read_csv("reviews.csv") #last my reviews
 
 def compute_vote(data, v):
     new_vote = (data['vote']*data['num_votes'] + v) / (data['num_votes'] + 1)
