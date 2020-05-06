@@ -10,10 +10,11 @@ import pandas as pd
 
 insurance = pd.read_csv("insurance.csv") #all data
 insurance['product_id'] = [str(i) for i in range(1, insurance.shape[0]+1)] #int
+insurance['product_id'] = insurance['product_id'].astype(str) #str
 insurance['vote'] = [0 for i in range(1, insurance.shape[0]+1)]
 insurance['num_votes'] = [0 for i in range(1, insurance.shape[0]+1)]
-wishList = pd.DataFrame(columns=insurance.columns)
-#wishList = pd.read_csv("wish_list.csv") #last my wish lish
+#wishList = pd.DataFrame(columns=insurance.columns)
+wishList = pd.read_csv("wish_list.csv") #last my wish lish
 
 command = ''
 
