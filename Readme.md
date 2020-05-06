@@ -4,7 +4,7 @@ This is very basic and detailed guide for person who is not good at in technolog
 ## Overview
 * Referrence **[Here](https://github.com/FFEVER/sos-products)** 
 
-## Github Guide
+## Github Guide (update 2020)
 ### installation
 1. create new repository in here 
 2. create vs code workspace (folder) and git on your local machine 
@@ -37,8 +37,13 @@ This is very basic and detailed guide for person who is not good at in technolog
 ### Flask library for API
 
 update pip
+``` bash
 python -m pip install --upgrade pip
+```
 
 install flask
+``` bash
 pip install Flask
+```
+
 * Guide: **[Here](https://www.youtube.com/watch?v=s_ht4AKnWZg)**

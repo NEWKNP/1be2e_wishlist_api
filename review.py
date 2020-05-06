@@ -17,7 +17,7 @@ review = pd.read_csv("reviews.csv") #last my reviews
 
 def compute_vote(data, v):
     new_vote = (data['vote']*data['num_votes'] + v) / (data['num_votes'] + 1)
-    print(v, new_vote)
+    #print(v, new_vote)
     return new_vote
 
 command = ''
