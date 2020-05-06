@@ -10,7 +10,7 @@ import pandas as pd
 
 insurance = pd.read_csv("insurance.csv") #all data
 names = [str(i) for i in range(1, insurance.shape[0]+1)]
-insurance['names'] = names
+insurance['product_id'] = names
 #wishList = pd.DataFrame(columns=insurance.columns)
 wishList = pd.read_csv("wish_list.csv") #last my wish lish
 
@@ -20,9 +20,9 @@ while(command != 'q'):
         command = input('add (a), see (s), remove (r), exit (q) :')        
         if command == 'a':
             name = str(input('Enter product name:'))
-            row = insurance.loc[insurance['names'] == name]
-            check = wishList.isin({'names': [name]})
-            if check['names'].any(axis=None) == False:
+            row = insurance.loc[insurance['product_id'] == name]
+            check = wishList.isin({'product_id': [name]})
+            if check['product_id'].any(axis=None) == False:
                 wishList = wishList.append(row)
             else:
                 print('already add')
